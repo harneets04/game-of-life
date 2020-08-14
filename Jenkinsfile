@@ -8,15 +8,7 @@ pipeline{
     
     stages
     {
-        stage ('checkout')
-        {
-            agent any
-            steps
-            {
-                git 'https://github.com/harneets04/game-of-life.git'
-            }
-        }
-        
+         
         stage ('compile')
         {
             agent any
